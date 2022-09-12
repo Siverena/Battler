@@ -1,0 +1,59 @@
+.bt-auth {
+    padding: 0 19px 0 19px;
+}
+
+.bt-auth-after {
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        border: 2px solid #3c3c43;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+        }
+    }
+    &__info {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        font-size: 14px;
+    }
+    &__name {
+        color: $grey;
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+    &__balance {
+        color: $pink;
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 10px;
+        }
+    }
+    &__btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        cursor: pointer;
+        &--up-balance {
+            background-color: $blue;
+        }
+        &--exit {
+            background-color: $pink;
+            margin-left: 10px;
+        }
+    }
+}

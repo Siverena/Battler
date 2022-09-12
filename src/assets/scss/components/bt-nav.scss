@@ -1,0 +1,30 @@
+.bt-nav {
+    display: flex;
+    align-items: center;
+    &__wrapper {
+        padding: 0 9%;
+    }
+    .router-link-exact-active {
+        color: $pink;
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 44px;
+        font-weight: 500;
+        color: $grey;
+        text-decoration: none;
+        margin-right: 64px;
+        &--money {
+            margin-right: 0;
+            margin-left: auto;
+            width: 146px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: $pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

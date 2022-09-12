@@ -1,0 +1,46 @@
+body {
+  background-color: $site-bg;
+  padding: 20px;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.page-content {
+  padding: 0 9%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 320px minmax(375px, 1240px) 320px;
+}
+.container {
+  width: 1000px;
+  padding: 0 49px;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 833px) {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+#app {
+  font-family: Rubik;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
