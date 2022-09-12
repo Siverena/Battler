@@ -1,0 +1,39 @@
+.bt-invite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        text-transform: uppercase;
+        color: $grey;
+        font-size: 16px;
+        font-weight: 500px;
+        margin-bottom: 15px;
+
+        span {
+            color: $pink;
+        }
+    }
+    &__info {
+        color: $light-gray;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    &__ref-link {
+        width: 420px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        color: $white;
+        font-weight: 500px;
+        border-radius: 10px;
+        background-color: $blue;
+        margin-bottom: 20px;
+    }
+    &__progress {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+}

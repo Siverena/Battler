@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import HomeView from '@/pages/HomeView.vue';
+
+import HelpPage from '@/pages/HelpPage/HelpPage.vue';
+import ReferalPage from '@/pages/ReferalPage/ReferalPage.vue';
+import MoneyPage from '@/pages/MoneyPage/MoneyPage.vue';
 
 Vue.use(VueRouter);
 
@@ -9,6 +13,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
+  },
+  {
+    path: '/help',
+    name: 'help',
+    component: HelpPage,
+  },
+  {
+    path: '/referal',
+    name: 'referal',
+    component: ReferalPage,
+  },
+  {
+    path: '/money',
+    name: 'money',
+    component: MoneyPage,
   },
   {
     path: '/about',
