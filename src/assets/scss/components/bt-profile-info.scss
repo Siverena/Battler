@@ -1,0 +1,68 @@
+.bt-profile-info {
+    display: flex;
+    margin-bottom: 28px;
+    &__image {
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        margin-right: 20px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__name {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $grey;
+        span {
+            text-transform: lowercase;
+            color: $light-grey;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    &__buttons {
+        display: flex;
+    }
+    &__update {
+        color: $white;
+        border-radius: 10px;
+        background-color: $pink;
+        width: 210px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0px 0px 15px 0px $pink;
+        }
+    }
+    &__change {
+        color: $light-grey;
+        border-radius: 10px;
+        background-color: #f1f1f1;
+        width: 265px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        cursor: pointer;
+        &:hover {
+            background-color: #e9e5e5;
+            box-shadow: 0px 0px 15px 0px #ccc8c8;
+        }
+    }
+}

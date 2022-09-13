@@ -5,7 +5,7 @@ export default {
       name: 'Paradox-art',
       avatar:
         'https://sun1-26.userapi.com/s/v1/if1/fKF81RvFb2H_xAOYVB4iqiVjTPklHEYXQYA4XFg4p7ZKpLnShTWLqugxpCA1KeYpKTKzHdM9.jpg?size=200x200&quality=96&crop=1361,95,1036,1036&ava=1',
-      balance: 1200,
+      balance: 1300,
       refs: 29,
       link: 'https://buttler.ru//ref=OTVRkeScQ',
     },

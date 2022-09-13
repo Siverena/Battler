@@ -5,6 +5,7 @@
       <template v-slot:bottom-text> Приглашено: {{ getStatus.user.refs }} </template>
     </BtSectionHeader>
     <BtInvite />
+    <BtProgress />
   </div>
 </template>
 

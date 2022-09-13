@@ -1,0 +1,65 @@
+.bt-last-games {
+    width: 265px;
+    &__header {
+        font-size: 14px;
+        color: $grey;
+        font-weight: 500;
+        margin-bottom: 21px;
+    }
+    &__wrapper {
+    }
+}
+.bt-last-game {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 40% 20% 20%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.13);
+
+    &__mode {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        &--pink {
+            background-color: $pink;
+        }
+        &--blue {
+            background-color: $blue;
+        }
+    }
+    &__summ {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey;
+        img {
+            margin-right: 11px;
+        }
+    }
+    &__people {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey;
+        img {
+            margin-right: 11px;
+        }
+    }
+    &__percent {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: $grey;
+        justify-content: flex-end;
+    }
+}
