@@ -1,0 +1,51 @@
+.bt-best-team {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.13);
+    width: 100%;
+
+    margin-bottom: 20px;
+    &__header {
+        font-size: 14px;
+        font-weight: 500;
+        color: $grey;
+        margin-bottom: 23px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__image {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        &--pink {
+            background-color: $pink;
+        }
+        &--blue {
+            background-color: $blue;
+        }
+    }
+    &__all {
+        font-size: 14px;
+        color: $light-grey;
+        margin-bottom: 14px;
+    }
+    &__summ {
+        font-weight: 500;
+        font-size: 14px;
+        color: $grey;
+    }
+}

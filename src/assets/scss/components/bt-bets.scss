@@ -1,12 +1,9 @@
 .bt-bets {
     display: flex;
     justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
     background-color: #ececec;
-
+    margin-top: -107px;
     position: relative;
-    top: -107px;
     &__team {
         border-radius: 10px;
         width: 40%;

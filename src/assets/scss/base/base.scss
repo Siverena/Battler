@@ -1,6 +1,5 @@
 body {
   background-color: $site-bg;
-  padding: 20px;
 }
 main {
   flex-grow: 1;
@@ -13,6 +12,7 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 320px minmax(375px, 1240px) 320px;
+  // margin: 0 auto;
 }
 .container {
   width: 1000px;
@@ -43,4 +43,6 @@ main {
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
+
+  padding: 140px 20px 20px 20px;
 }
