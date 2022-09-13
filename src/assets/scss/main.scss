@@ -17,8 +17,6 @@
 
 /**********
 /* ELEMENTS */
-// @import "./elements/_dl-logo.scss";
-// @import "./elements/_dl-button.scss";
 @import "./elements/bt-section-header.scss";
 
 /**********
@@ -29,15 +27,21 @@
 @import "./components/bt-auth.scss";
 @import "./components/bt-questions.scss";
 @import "./components/bt-invite.scss";
+@import "./components/bt-history.scss";
+@import "./components/bt-history-my-game.scss";
+@import "./components/bt-profile-info.scss";
+@import "./components/bt-my-stats.scss";
+@import "./components/bt-progress.scss";
+@import "./components/bt-banner-subscribe.scss";
+@import "./components/bt-last-games.scss";
+@import "./components/bt-circle.scss";
+@import "./components/bt-bets.scss";
+@import "./components/bt-operations.scss";
 
 /* PAGES */
-// @import "./pages/main-page.scss";
-// @import "./pages/help-page.scss";
-// @import "./pages/money-page.scss";
-// @import "./pages/profile-page.scss";
-// @import "./pages/referal-page.scss";
-// @import "./pages/not-found-page.scss";
-@import "./pages/bt-help.scss";
+@import "./pages/help-page.scss";
+@import "./pages/games-page.scss";
+@import "./pages/money-page.scss";
 
 /**********
 /* FONTS */

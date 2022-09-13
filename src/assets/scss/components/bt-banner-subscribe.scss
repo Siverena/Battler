@@ -1,0 +1,31 @@
+.bt-banner-subscribe {
+    width: 265px;
+    height: 160px;
+    background-image: url(../assets/img/subscribe/bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    &__text {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ececec;
+        text-align: center;
+    }
+    &__links {
+        display: flex;
+        margin-top: auto;
+    }
+    &__link {
+        width: 50%;
+        text-align: center;
+        color: #ececec;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}

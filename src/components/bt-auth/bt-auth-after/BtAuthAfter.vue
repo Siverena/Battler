@@ -1,8 +1,10 @@
 <template>
   <div class="bt-auth-after">
-    <div class="bt-auth-after__avatar">
-      <img :src="user.avatar" alt="" width="43px" height="43px" />
-    </div>
+    <router-link to="/profile">
+      <div class="bt-auth-after__avatar">
+        <img :src="user.avatar" alt="" width="43px" height="43px" />
+      </div>
+    </router-link>
     <div class="bt-auth-after__info">
       <div class="bt-auth-after__name">{{ user.name }}</div>
       <div class="bt-auth-after__balance">

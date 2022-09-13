@@ -1,5 +1,12 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="profile">
+    <BtSectionHeader>
+      <template v-slot:up-text> Профиль </template>
+      <template v-slot:bottom-text> Личная информация </template>
+    </BtSectionHeader>
+    <BtProfileInfo />
+    <BtMyStat />
+    <BtHistoryMyGame />
   </div>
 </template>
+<script src="./profile-page.js"></script>

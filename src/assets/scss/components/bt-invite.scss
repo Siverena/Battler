@@ -14,7 +14,7 @@
         }
     }
     &__info {
-        color: $light-gray;
+        color: $light-grey;
         font-size: 12px;
         margin-bottom: 20px;
     }
@@ -30,10 +30,5 @@
         border-radius: 10px;
         background-color: $blue;
         margin-bottom: 20px;
-    }
-    &__progress {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 140px);
     }
 }
