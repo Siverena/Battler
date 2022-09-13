@@ -2,6 +2,12 @@
     padding: 13px 0;
     margin-bottom: 20px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 320px minmax(375px, 1240px) 320px;
+    background-color: #ececec;
+
     &__logo {
         margin-left: 59px;
     }
