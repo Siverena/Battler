@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div class="bt-bets__summ">Сумма</div>
+    <input type="text" class="bt-bets__summ" placeholder="Сумма" />
     <div class="bt-bets__team">
       <div class="bt-bets__team-btn-wrap">
         <div class="bt-bets__team-btn bt-bets__team-btn--blue">Поставить</div>

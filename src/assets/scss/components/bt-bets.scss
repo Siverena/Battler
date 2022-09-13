@@ -1,120 +1,130 @@
-.bt-bets {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ececec;
-    margin-top: -107px;
-    position: relative;
-    &__team {
-        border-radius: 10px;
-        width: 40%;
-    }
-    &__team-btn-wrap {
-        font-size: 12px;
-        color: $light-grey;
-        display: flex;
-        align-items: center;
-        height: 60px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        background-color: rgb(236, 236, 236);
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.13);
-    }
-    &__team-btn {
-        width: 50%;
-        height: 100%;
-        font-size: 16px;
-        color: #f1f1f1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: stretch;
-        border-radius: 10px;
-        cursor: pointer;
-        &--pink {
-            background-color: $pink;
-            margin-left: auto;
-            &:hover {
-                box-shadow: 0px 0px 15px 0px $pink;
-            }
-        }
-        &--blue {
-            background-color: $blue;
-            margin-right: auto;
-            &:hover {
-                box-shadow: 0px 0px 15px 0px $blue;
-            }
-        }
-    }
-    &__team-people {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        img {
-            margin-right: 9px;
-        }
-    }
-    &__team-summ {
-        display: flex;
-        align-items: center;
-        padding: 0 20px;
-        img {
-            margin-right: 9px;
-        }
-    }
-    &__summ {
-        border-radius: 10px;
-        background-color: rgb(213, 213, 213);
-        width: 120px;
-        height: 60px;
-        color: $light-grey;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 500;
-    }
-}
-.bt-bet {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 12% 50% 25% 13%;
-    align-items: center;
+.bt-bets { 
+  display: flex;
+  justify-content: space-between;
+  background-color: #ececec;
+  position: relative;
+   margin-top: -107px;
+  &__team {
     border-radius: 10px;
+    width: 40%;
+  }
+  &__team-btn-wrap {
+    font-size: 12px;
+    color: $light-grey;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     background-color: rgb(236, 236, 236);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.13);
-    margin-bottom: 10px;
-    &__img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        border: 2px solid black;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  }
+  &__team-btn {
+    width: 50%;
+    height: 100%;
+    font-size: 16px;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    border-radius: 10px;
+    cursor: pointer;
+    &--pink {
+      background-color: $pink;
+      margin-left: auto;
+      &:hover {
+        box-shadow: 0px 0px 15px 0px $pink;
+      }
     }
-    &__user-name {
-        font-weight: 500;
-        font-size: 12px;
-        text-transform: uppercase;
-        padding: 0 3%;
+    &--blue {
+      background-color: $blue;
+      margin-right: auto;
+      &:hover {
+        box-shadow: 0px 0px 15px 0px $blue;
+      }
     }
-    &__bet {
-        font-weight: 500;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        img {
-            margin-right: 9px;
-        }
+  }
+  &__team-people {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    img {
+      margin-right: 9px;
     }
-    &__win {
-        font-weight: 500;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        img {
-            margin-right: 9px;
-        }
+  }
+  &__team-summ {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    img {
+      margin-right: 9px;
     }
+  }
+  &__summ {
+    border-radius: 10px;
+    background-color: rgb(213, 213, 213);
+    width: 120px;
+    height: 60px;
+    color: $grey;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border: none;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    &::placeholder {
+      color: $light-grey;
+    }
+  }
+}
+.bt-bet {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 12% 50% 25% 13%;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 1, 0.13);
+  margin-bottom: 10px;
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__user-name {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 3%;
+  }
+  &__bet {
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 9px;
+    }
+  }
+  &__win {
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 9px;
+    }
+  }
 }
