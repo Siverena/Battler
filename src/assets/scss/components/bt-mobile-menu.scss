@@ -1,0 +1,11 @@
+.bt-mobile-menu {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .bt-mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #46464e;
+  }
+}

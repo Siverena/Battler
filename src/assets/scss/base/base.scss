@@ -19,7 +19,10 @@ main {
   padding: 0 49px;
   margin: 0 auto;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1015px) {
+  .grid {
+    grid-template-columns: minmax(375px, 100%);
+  }
 }
 @media (max-width: 833px) {
 }
