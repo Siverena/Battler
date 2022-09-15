@@ -12,6 +12,9 @@
         width: 100%;
         justify-content: space-between;
         grid-template-columns: repeat(auto-fill, 146px);
+        row-gap: 10px;
+        max-width: 1021px;
+        margin: 0 auto;
     }
 }
 .bt-my-stat {
@@ -55,5 +58,15 @@
         &--spec {
             color: $grey;
         }
+    }
+}
+@media (max-width: 470px) {
+    .bt-my-stats {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fill, 100px);
+        }
+    }
+    .bt-my-stat {
+        width: 100px;
     }
 }

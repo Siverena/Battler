@@ -1,5 +1,6 @@
 export default {
   name: 'BtLastGames',
+  props: ['closeHistory'],
   data() {
     return {
       games: [

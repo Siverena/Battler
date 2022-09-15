@@ -34,4 +34,41 @@
             }
         }
     }
+    &__open-mob-nav {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color: $grey;
+        border: none;
+        display: none;
+    }
+}
+@media (max-width: 1400px) {
+    .bt-nav {
+        &__wrapper {
+        }
+
+        &__link {
+            margin-right: 30px;
+            &--money {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+@media (max-width: 1250px) {
+    .bt-navigation {
+        order: 3;
+    }
+    .bt-nav {
+        &__open-mob-nav {
+            display: flex;
+        }
+        &__wrapper {
+            display: none;
+        }
+    }
 }

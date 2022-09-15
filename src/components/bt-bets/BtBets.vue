@@ -5,9 +5,11 @@
         <div class="bt-bets__team-people">
           <img src="../../assets/img/last-games/people.png" alt="" /> 14
         </div>
+
         <div class="bt-bets__team-summ">
           <img src="../../assets/img/last-games/light-grey.png" alt="" />25489.00
         </div>
+
         <div class="bt-bets__team-btn bt-bets__team-btn--pink">Поставить</div>
       </div>
       <div v-for="(bet, key) in betsModePink" :key="key" class="bt-bet">
@@ -25,7 +27,9 @@
         </div>
       </div>
     </div>
-    <input type="text" class="bt-bets__summ" placeholder="Сумма" />
+    <div class="bt-bets__team-summ-wrapper">
+      <input type="text" class="bt-bets__summ" placeholder="Сумма" />
+    </div>
     <div class="bt-bets__team">
       <div class="bt-bets__team-btn-wrap">
         <div class="bt-bets__team-btn bt-bets__team-btn--blue">Поставить</div>

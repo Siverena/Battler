@@ -5,15 +5,15 @@
       <svg
         class="bt-circle__progress-bar"
         xmlns="http://www.w3.org/2000/svg"
-        :height="height"
+        :height="getHeight"
         :width="circleCenter * 2"
-        :viewBox="(0, 0, circleCenter * 2, height)"
+        :viewBox="(0, 0, circleCenter * 2, getHeight)"
       >
         <g fill="none" stroke="#2A2D2F">
           <circle
             :cx="circleCenter"
             :cy="circleCenter"
-            :r="radius"
+            :r="getRadius"
             stroke="#fe6289"
             :stroke-width="strokeWidth"
             :stroke-dasharray="strokePink + ',' + strokeBlue + ',0,' + strokeNone"
@@ -22,7 +22,7 @@
           <circle
             :cx="circleCenter"
             :cy="circleCenter"
-            :r="radius"
+            :r="getRadius"
             stroke="#08b0fb"
             :stroke-width="strokeWidth"
             :stroke-dasharray="strokeBlue + ',' + strokeNone + ',0,' + strokePink"

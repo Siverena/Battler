@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import auth from './modules/auth.js';
+import adaptive from './modules/adaptive.js';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
@@ -8,5 +9,5 @@ export default new Vuex.Store({
   getters: {},
   mutations: {},
   actions: {},
-  modules: { auth },
+  modules: { auth, adaptive },
 });

@@ -1,6 +1,11 @@
 <template>
   <section class="bt-last-games">
-    <p class="bt-last-games__header">Прошедшие игры</p>
+    <div class="bt-last-games__header">
+      <p>Прошедшие игры</p>
+      <button class="bt-last-games__close" @click="closeHistory">
+        <img src="../../assets/img/mobile-nav/close.png" alt="" />
+      </button>
+    </div>
     <div class="bt-last-games__wrapper">
       <div v-for="(game, key) in games" :key="key" class="bt-last-game">
         <div

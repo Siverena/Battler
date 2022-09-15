@@ -1,10 +1,4 @@
 .bt-progress {
-    &-wrapper {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 146px);
-        justify-content: space-between;
-    }
     width: 144px;
     height: 130px;
     border-radius: 10px;
@@ -12,6 +6,16 @@
     background-color: #d5d5d5;
     display: flex;
     flex-direction: column;
+    &-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 144px);
+        justify-content: space-between;
+        row-gap: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
     &__header {
         font-size: 12px;
         font-weight: 500;
@@ -67,6 +71,19 @@
             svg {
                 display: block;
             }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .bt-progress {
+        width: 106px;
+        height: 120px;
+
+        &-wrapper {
+            grid-template-columns: repeat(auto-fill, 106px);
+        }
+        &__header {
+            font-size: 16px;
         }
     }
 }

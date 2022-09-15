@@ -5,7 +5,7 @@
 .bt-auth-after {
     display: flex;
     align-items: center;
-
+    max-width: 320px;
     &__avatar {
         width: 43px;
         height: 43px;
@@ -20,6 +20,7 @@
     }
     &__info {
         margin-left: 10px;
+        margin-right: 10px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,9 +28,17 @@
         font-size: 14px;
     }
     &__name {
-        color: $grey;
-        margin-bottom: 6px;
-        font-weight: 500;
+        a {
+            text-decoration: inherit;
+            color: $grey;
+            margin-bottom: 6px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 166px;
+            text-decoration: none;
+        }
     }
     &__balance {
         color: $pink;
@@ -60,6 +69,21 @@
             &:hover {
                 box-shadow: 0px 0px 15px 0px $pink;
             }
+        }
+    }
+}
+@media (max-width: 1250px) {
+    .bt-auth {
+        margin-left: auto;
+    }
+}
+@media (max-width: 550px) {
+    .bt-auth-after {
+        &__avatar {
+            display: none;
+        }
+        &__btn {
+            display: none;
         }
     }
 }

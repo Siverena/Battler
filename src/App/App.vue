@@ -10,6 +10,7 @@
       <div class="col"></div>
     </main>
     <BtRightSidebar />
+    <BtMobileMenu />
   </div>
 </template>
 <script src="./app.js"></script>

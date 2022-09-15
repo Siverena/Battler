@@ -3,13 +3,15 @@
   justify-content: center;
   position: relative;
   margin-top: -93px;
+  margin-bottom: -94px;
   &__image {
-    width: 500px;
-    height: 472px;
+    width: 456px;
+    height: 456px;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
   }
   &__percent-pink {
     display: flex;
@@ -19,8 +21,9 @@
     text-transform: uppercase;
     color: $pink;
     margin-right: 5%;
-    width: 100px;
+    width: 110px;
     justify-content: flex-end;
+    flex-shrink: 0;
   }
   &__percent-blue {
     display: flex;
@@ -30,7 +33,8 @@
     text-transform: uppercase;
     color: $blue;
     margin-left: 5%;
-    width: 100px;
+    width: 110px;
+    flex-shrink: 0;
   }
   &__content {
     display: flex;
@@ -54,9 +58,99 @@
   }
   &__progress-bar {
     position: absolute;
-    top: -5px;
+    top: -9px;
     left: 0;
     right: 0;
     margin: auto;
+  }
+}
+@media (max-width: 1420px) {
+  .bt-circle {
+    margin-top: 0;
+    &__percent-pink {
+      padding-bottom: 110px;
+      font-size: 27px;
+      width: 60px;
+      align-items: flex-end;
+      margin-right: 0;
+    }
+    &__percent-blue {
+      padding-bottom: 110px;
+      width: 60px;
+      font-size: 27px;
+      align-items: flex-end;
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .bt-circle {
+    margin-top: 0;
+    &__percent-pink {
+      padding-bottom: 0;
+      font-size: 38px;
+      align-items: center;
+      width: 100px;
+    }
+    &__percent-blue {
+      width: 100px;
+      padding-bottom: 0;
+      align-items: center;
+      font-size: 38px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .bt-circle {
+    margin-bottom: -74px;
+    &__timer {
+      font-size: 21px;
+    }
+    &__content {
+      width: 135px;
+      height: 135px;
+      border-width: 23px;
+      box-shadow: 0px 0px 0px 23px #e8e8e8;
+      img {
+        width: 50px;
+        height: 63px;
+      }
+    }
+    &__image {
+      width: 306px;
+      height: 306px;
+    }
+    &__percent-pink {
+      width: 60px;
+      padding-bottom: 100px;
+      font-size: 20px;
+      align-items: flex-end;
+    }
+    &__percent-blue {
+      width: 60px;
+      padding-bottom: 100px;
+      font-size: 20px;
+      align-items: flex-end;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .bt-circle {
+  }
+}
+@media (max-width: 430px) {
+  .bt-circle {
+    margin-bottom: -68px;
+    &__image {
+      width: 262px;
+      height: 262px;
+      margin: 0 -10px;
+    }
+    &__percent-pink {
+      padding-bottom: 70px;
+    }
+    &__percent-blue {
+      padding-bottom: 70px;
+    }
   }
 }
