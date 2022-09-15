@@ -202,3 +202,15 @@
         }
     }
 }
+@media (max-width: 550px) {
+    .bt-operations {
+        display: flex;
+        flex-direction: column;
+    }
+    .bt-operation {
+        width: 100%;
+    }
+    .withdrawal {
+        margin-bottom: 20px;
+    }
+}

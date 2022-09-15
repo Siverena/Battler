@@ -6,7 +6,10 @@
       </div>
     </router-link>
     <div class="bt-auth-after__info">
-      <div class="bt-auth-after__name">{{ user.name }}</div>
+      <div class="bt-auth-after__name">
+        <router-link to="/profile"> {{ user.name }} </router-link>
+      </div>
+
       <div class="bt-auth-after__balance">
         <svg
           xmlns="http://www.w3.org/2000/svg"

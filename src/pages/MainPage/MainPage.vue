@@ -2,7 +2,7 @@
   <div class="bt-games">
     <div class="bt-games__header">
       <BtSectionHeader>
-        <template v-slot:up-text> BUTTLE #6452352637 </template>
+        <template v-slot:up-text> BATTLE #6452352637 </template>
         <template v-slot:bottom-text> Количество участников: 26 </template>
       </BtSectionHeader>
       <div class="bt-games__info">

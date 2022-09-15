@@ -20,3 +20,33 @@
         color: $light-grey;
     }
 }
+@media (max-width: 1420px) {
+    .bt-games {
+        &__header {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__bank {
+            display: none;
+        }
+        &__info {
+            margin-top: -27px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    .bt-games {
+        &__header {
+            margin-bottom: 5px;
+        }
+        .bt-section-header {
+            margin-bottom: 33px;
+        }
+        .bt-section-header__up-text {
+            margin-bottom: 4px;
+        }
+        &__hash {
+            margin-bottom: 0;
+        }
+    }
+}

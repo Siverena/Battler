@@ -1,5 +1,10 @@
+html {
+  background-color: $site-bg;
+  min-width: 375px;
+}
 body {
   background-color: $site-bg;
+  min-width: 375px;
 }
 main {
   flex-grow: 1;
@@ -19,10 +24,7 @@ main {
   padding: 0 49px;
   margin: 0 auto;
 }
-@media (max-width: 1440px) {
-}
-@media (max-width: 833px) {
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,6 +45,31 @@ main {
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
-
+  min-width: 345px;
   padding: 140px 20px 20px 20px;
+}
+@media (max-width: 1570px) {
+  .page-content {
+    padding: 0 4%;
+  }
+}
+@media (max-width: 1250px) {
+  .grid {
+    grid-template-columns: minmax(345px, 100%);
+  }
+  .col {
+    display: none;
+  }
+  #app {
+    padding-bottom: 80px;
+  }
+  .page-content {
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  #app {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

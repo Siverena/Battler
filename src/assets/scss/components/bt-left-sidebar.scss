@@ -1,6 +1,13 @@
 .bt-left-sidebar {
-    max-height: calc(100vh - 120px);
-    height: 100%;
-    position: fixed;
-    bottom: 20px;
+  max-height: calc(100vh - 120px);
+  height: 100%;
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1250px) {
+  .bt-left-sidebar {
+    display: none;
+  }
 }

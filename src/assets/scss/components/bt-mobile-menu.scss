@@ -1,0 +1,58 @@
+.bt-mobile-menu {
+  display: none;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #46464e;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: 60px;
+  z-index: 10;
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px;
+    cursor: pointer;
+    &--history {
+      background-color: $blue;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+    &--chat {
+      background-color: $pink;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text-name {
+    color: $pink;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__text-copyright {
+    color: #ececec;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1250px) {
+  .bt-mobile-menu {
+    display: flex;
+  }
+}

@@ -1,5 +1,6 @@
 export default {
   name: 'BtChats',
+  props: ['closeChat'],
   data() {
     return {
       // role

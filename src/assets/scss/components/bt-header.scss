@@ -4,11 +4,25 @@
     align-items: center;
     position: fixed;
     top: 0;
+    left: 0;
     display: grid;
     grid-template-columns: 320px minmax(375px, 1240px) 320px;
     background-color: #ececec;
-
+    z-index: 10;
     &__logo {
         margin-left: 59px;
+    }
+}
+@media (max-width: 1250px) {
+    .bt-header {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 13px 20px;
+        &__logo {
+            margin-left: 0px;
+            margin-right: 30px;
+        }
     }
 }
