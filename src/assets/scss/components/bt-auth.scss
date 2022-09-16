@@ -1,7 +1,36 @@
 .bt-auth {
     padding: 0 19px 0 19px;
 }
+.bt-auth-before {
+    display: flex;
+    align-items: center;
+    &__text {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $light-grey;
+        margin-right: 20px;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__button {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blue;
 
+        cursor: pointer;
+        &--vk {
+            margin-right: 10px;
+            // background-color: #0077ff;
+        }
+    }
+}
 .bt-auth-after {
     display: flex;
     align-items: center;

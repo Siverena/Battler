@@ -17,6 +17,7 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 320px minmax(375px, 1240px) 320px;
+  margin: 0 auto;
   // margin: 0 auto;
 }
 .container {
